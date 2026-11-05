@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090705">
+    <meta name="description" content="A golden night filled with happiness, prosperity and festive wishes. Happy Dhanteras!">
+    <title>Happy Dhanteras | A Golden Night</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-diya">🪔</div>
+        <h2>Preparing Your Golden Night</h2>
+        <div class="loader-line"><span></span></div>
+    </div>
+
+    <!-- Background Effects -->
+    <canvas id="particles"></canvas>
+    <div class="ambient-glow"></div>
+    <div class="gold-orb orb-one"></div>
+    <div class="gold-orb orb-two"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">AUREL<span>✨</span></a>
+        <a href="#wishes" class="nav-btn">Festive Wishes ↗</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="top-label">
+                    <span class="label-line"></span>
+                    THE FESTIVAL OF PROSPERITY
+                    <span class="label-line"></span>
+                </div>
+
+                <div class="mandala">
+                    <div class="mandala-ring ring-one"></div>
+                    <div class="mandala-ring ring-two"></div>
+                    <div class="mandala-ring ring-three"></div>
+                    <div class="mandala-center">✦</div>
+                </div>
+
+                <p class="sub-heading">A NIGHT OF LIGHT & GOLD</p>
+
+                <h1>
+                    Happy<br>
+                    <span class="gold-text">Dhanteras</span>
+                </h1>
+
+                <p class="hero-description">
+                    May your life shine brighter than gold,
+                    your dreams turn into reality,
+                    and happiness find its way to your home.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#wishes" class="primary-btn">
+                        Explore Wishes <span>↗</span>
+                    </a>
+
+                    <button class="secondary-btn" id="surpriseBtn">
+                        <span>✧</span> Open Surprise
+                    </button>
+                </div>
+
+                <div class="hero-bottom">
+                    <span>✦ LIGHT • LOVE • PROSPERITY ✦</span>
+                </div>
+
+            </div>
+
+            <!-- Floating Diyas -->
+            <div class="floating-diya diya-left">
+                <div class="flame"></div>
+                <div class="diya-body"></div>
+                <div class="diya-base"></div>
+            </div>
+
+            <div class="floating-diya diya-right">
+                <div class="flame"></div>
+                <div class="diya-body"></div>
+                <div class="diya-base"></div>
+            </div>
+
+            <div class="side-decoration left-decoration">✧</div>
+            <div class="side-decoration right-decoration">✧</div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </section>
+
+        <!-- Wish Section -->
+        <section class="wishes-section" id="wishes">
+
+            <div class="section-heading reveal">
+                <span class="section-tag">A LITTLE WISH FOR YOU</span>
+                <h2>Let The <span class="gold-text">Golden Moments</span> Begin</h2>
+                <p>May this beautiful occasion bring endless reasons to smile.</p>
+            </div>
+
+            <div class="wish-grid">
+
+                <div class="wish-card reveal">
+                    <div class="card-icon">💰</div>
+                    <h3>Abundance</h3>
+                    <p>May prosperity and success always walk beside you.</p>
+                    <span class="card-star">✦</span>
+                </div>
+
+                <div class="wish-card reveal">
+                    <div class="card-icon">✨</div>
+                    <h3>Happiness</h3>
+                    <p>May every moment of your life sparkle with joy.</p>
+                    <span class="card-star">✦</span>
+                </div>
+
+                <div class="wish-card reveal">
+                    <div class="card-icon">🌟</div>
+                    <h3>New Beginnings</h3>
+                    <p>May every new beginning lead you towards greatness.</p>
+                    <span class="card-star">✦</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Final Greeting -->
+        <section class="final-section reveal">
+
+            <div class="final-mandala">✺</div>
+
+            <span class="section-tag">A MESSAGE FROM THE HEART</span>
+
+            <h2>Keep Shining,<br><span class="gold-text">Keep Smiling.</span></h2>
+
+            <p>
+                To all my wonderful friends,<br>
+                wishing you a Dhanteras filled with light,
+                good fortune, beautiful memories and success.
+            </p>
+
+            <div class="signature">
+                <span>With Best Wishes,</span>
+                <h3>From Navneet ❤️</h3>
+                <small>FOR ALL MY FRIENDS</small>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-diya">🪔</div>
+        <p>Made with ✨ for all my friends</p>
+        <span>HAPPY DHANTERAS • 2026</span>
+    </footer>
+
+    <!-- Surprise Popup -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <button class="close-popup" id="closePopup">×</button>
+            <div class="popup-icon">🪔</div>
+            <span class="section-tag">A SPECIAL WISH FOR YOU</span>
+            <h2>May Your World<br><span class="gold-text">Glow With Gold!</span></h2>
+            <p>
+                May your efforts bring success,
+                your home be filled with happiness,
+                and your future shine with endless possibilities.
+            </p>
+            <div class="popup-signature">— From Navneet ❤️</div>
+            <button class="primary-btn popup-close-btn" id="popupOkay">
+                Beautiful! ✨
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
